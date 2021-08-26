@@ -19,7 +19,10 @@ ComplexNumber newComplexNumber (void){
 
 
 ComplexNumber setComplexNumber(ComplexNumber phasor, float real, float imaginary){
-
+  ComplexNumber myComplexNumber;
+  myComplexNumber->real=real;
+  myComplexNumber->imaginary=imaginary;
+  return myComplexNumber;
 }
 
 ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, float *imaginary){
@@ -27,5 +30,7 @@ ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, floa
 }
 
 ComplexNumber freeComplexNumber(ComplexNumber phasor){
-  
+  ComplexNumber phasor;
+  num=phasor;
+  free(num);
 }
