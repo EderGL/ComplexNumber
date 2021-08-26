@@ -30,7 +30,7 @@ ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, floa
 }
 
 ComplexNumber freeComplexNumber(ComplexNumber phasor){
-  ComplexNumber phasor;
-  num=phasor;
+  ComplexNumber myPhasor;
+  myPhasor=phasor;
   free(num);
 }
