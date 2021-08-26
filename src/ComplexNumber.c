@@ -26,11 +26,14 @@ ComplexNumber setComplexNumber(ComplexNumber phasor, float real, float imaginary
 }
 
 ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, float *imaginary){
-
+  ComplexNumber myComplexNumber;
+  myComplexNumber->real=*real;
+  myComplexNumber->imaginary=*imaginary;
+  return myComplexNumber;
 }
 
 ComplexNumber freeComplexNumber(ComplexNumber phasor){
   ComplexNumber myPhasor;
   myPhasor=phasor;
-  free(num);
+  free(myPhasor);
 }

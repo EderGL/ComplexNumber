@@ -53,6 +53,9 @@ void test_ComplexNumberGet(void){
     ComplexNumber test_number = newComplexNumber();
     float real=0, imaginary=0;
 
+    real=REAL;
+    imaginary=IMAGINARY;
+    
     test_number->real = REAL;
     test_number->imaginary = IMAGINARY;
 
@@ -64,7 +67,7 @@ void test_ComplexNumberGet(void){
 }
 
 void test_ComplexNumberFree(void){
-    puts("Testing Complex Number Get Function");
+    puts("Testing Complex Number Free Function");
     ComplexNumber test_number = newComplexNumber();
 
     test_number = freeComplexNumber(test_number);

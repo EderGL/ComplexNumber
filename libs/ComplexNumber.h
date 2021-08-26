@@ -2,7 +2,7 @@
  * @Author Cesarin Anggelidis
  * @Date 17 Aug 2021
  * @Name ComplexNumber.h
- * @Copyright TDA OtoÃ±o 2021
+ * @Copyright TDA Otoño 2021
  */
 
 // SOLID Convention
